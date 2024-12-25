@@ -222,7 +222,7 @@ const MapChart = () => {
         width={800}
       >
         {/* <ZoomableGroup center={[9.08628, -78.9283]} zoom={1}> */}
-        <Geographies geography={"/features.json"}>
+        <Geographies geography={"features.json"}>
           {({ geographies }) =>
             geographies.map((geo) => {
               return (
