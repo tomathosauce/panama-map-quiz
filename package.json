@@ -1,7 +1,7 @@
 {
-  "name": "react-simple-maps-click-handler",
+  "name": "panama-quiz-map",
   "version": "1.0.0",
-  "description": "Basic example of how to pass geographies to click handlers in react-simple-maps v1.",
+  "description": "A basic quiz about Panama's provinces",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
     "typescript": "3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

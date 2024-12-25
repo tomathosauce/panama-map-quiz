@@ -1,5 +1,5 @@
 html {
-  font-family: system-ui, sans-serif;
+  font-family: "Comic Neue", serif;
   font-size: 1.25rem;
 }
 
@@ -11,8 +11,58 @@ body {
 svg {
   display: inline-block;
   vertical-align: middle;
+  max-width: 1024px;
 }
 
 .app {
   /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p,
+h3,
+h1 {
+  text-align: center;
+}
+
+.custom-link {
+  font-weight: bold; /* equivalent to font-medium */
+  color: #2563eb; /* blue-600 */
+  text-decoration: none; /* removes the underline */
+}
+
+.custom-link:hover {
+  text-decoration: underline; /* adds underline on hover */
+}
+
+/* Dark mode styling */
+@media (prefers-color-scheme: dark) {
+  .custom-link {
+    color: #3b82f6; /* dark:text-blue-500 */
+  }
+}
+
+.custom-button {
+  color: #1f2937; /* text-gray-900 */
+  background-color: #ffffff; /* bg-white */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  outline: none; /* focus:outline-none */
+  font-weight: 500; /* font-medium */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-size: 0.875rem; /* text-sm */
+  padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+  margin-inline-end: 0.5rem; /* me-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s; /* for smooth hover/focus effects */
+}
+
+.custom-button:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.custom-button:focus {
+  outline: none; /* focus:outline-none */
+  box-shadow: 0 0 0 4px #f3f4f6; /* focus:ring-4 focus:ring-gray-100 */
 }
