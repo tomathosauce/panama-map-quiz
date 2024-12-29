@@ -149,7 +149,7 @@ const MapChart = () => {
         <>
           <h3>
             A ver, dónde queda{" "}
-            <span style={{ fontStyle: "italic" }}>{currentProvince}</span>?
+            <span style={{ fontStyle: "italic" }}>{datosExtraRegiones[currentProvince].alias ? datosExtraRegiones[currentProvince].alias.replace("\n", " "): currentProvince}</span>?
           </h3>
           <p>
             Puntuación actual = {correctas}/{provincias.length}
@@ -214,11 +214,11 @@ const MapChart = () => {
         projection="geoMercator"
         preserveAspectRatio="none"
         projectionConfig={{
-          center: [-80, 8.57708],
-          scale: 6000,
+          center: [-80.1, 8.42708],
+          scale: 7500,
           // rotate: [0, 0, 0],
         }}
-        height={300}
+        height={350}
         width={800}
       >
         {/* <ZoomableGroup center={[9.08628, -78.9283]} zoom={1}> */}
